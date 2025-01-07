@@ -13,7 +13,7 @@ ln -s ~/.dotfiles/.config/zed/keymap.json ~/.config/zed/keymap.json
 # ghostty config
 mkdir -p ~/.config/ghostty
 ln -s ~/.dotfiles/.config/ghostty/config ~/.config/ghostty/config
-ln -s ~/.dotfiles/.config/ghostty/themes ~/.config/ghostty/themes
+ln -s ~/.dotfiles/.config/ghostty/themes ~/.config/ghostty
 
 # brew
 brew bundle --file ~/.dotfiles/Brewfile
