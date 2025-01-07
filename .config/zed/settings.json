@@ -1,0 +1,55 @@
+{
+  "assistant": {
+    "default_model": {
+      "provider": "zed.dev",
+      "model": "claude-3-5-sonnet-latest"
+    },
+    "version": "2"
+  },
+  "theme": {
+    "dark": "Vercel Dark",
+    "light": "Vercel Light",
+    "mode": "system"
+  },
+  "tabs": {
+    "file_icons": true,
+    "git_status": true
+  },
+  "ui_font_family": ".SystemUIFont",
+  "buffer_font_family": "Geist Mono",
+  "buffer_font_features": {
+    "liga": false,
+    "calt": false
+  },
+  "features": {
+    "inline_completion_provider": "none"
+  },
+  "auto_install_extensions": {
+    "vercel-theme": true,
+    "ruff": true,
+    "biome": true,
+    "emmet": true,
+    "rainbow-csv": true
+  },
+  "file_types": {
+    "Shell Script": [".env.local", ".env.development"],
+    "JSON": ["site.webmanifest"]
+  },
+  "lsp": {
+    "vtsls": {
+      "settings": {
+        "typescript": {
+          "tsserver": {
+            "nodePath": "/Applications/Electron.app/Contents/MacOS/Electron",
+            "maxTsServerMemory": 4096
+          }
+        }
+      }
+    },
+    "biome": {
+      "settings": {
+        "require_config_file": true
+      }
+    }
+  }
+}

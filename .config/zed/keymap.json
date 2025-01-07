@@ -1,0 +1,16 @@
+[
+  {
+    "bindings": {
+      "ctrl-`": "workspace::ToggleBottomDock"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-pageup": ["editor::MoveUpByLines", { "lines": 3 }],
+      "ctrl-pagedown": ["editor::MoveDownByLines", { "lines": 3 }],
+      "shift-ctrl-pageup": ["editor::SelectUpByLines", { "lines": 3 }],
+      "shift-ctrl-pagedown": ["editor::SelectDownByLines", { "lines": 3 }]
+    }
+  }
+]
