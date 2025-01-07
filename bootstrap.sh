@@ -1,3 +1,7 @@
+# git config
+git config --global user.name \"Chung Wei\"
+git config --global user.email leongchungwei@hotmail.com
+
 # .zshrc
 ln -s ~/.dotfiles/.zshrc ~/.zshrc
 
@@ -12,7 +16,7 @@ ln -s ~/.dotfiles/.config/ghostty/config ~/.config/ghostty/config
 ln -s ~/.dotfiles/.config/ghostty/themes ~/.config/ghostty/themes
 
 # brew
-brew bundle --file Brewfile
+brew bundle --file ~/.dotfiles/Brewfile
 
 # zed + electron
 xattr -d com.apple.quarantine /Applications/Electron.app/
