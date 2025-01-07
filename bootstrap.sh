@@ -1,3 +1,8 @@
+
+# Keyboard settings
+defaults write -g InitialKeyRepeat -int 15
+defaults write -g KeyRepeat -int 2
+
 # git config
 git config --global user.name \"Chung Wei\"
 git config --global user.email leongchungwei@hotmail.com
