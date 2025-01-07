@@ -1,0 +1,6 @@
+shell-integration-features = no-cursor
+theme = dark:"vercel-dark",light:"vercel-light"
+font-family = "Geist Mono"
+font-size = 15
+font-feature = -liga
+font-thicken = true
