@@ -2,6 +2,10 @@
 # Keyboard settings
 defaults write -g InitialKeyRepeat -int 15
 defaults write -g KeyRepeat -int 2
+defaults write NSGlobalDomain AppleKeyboardUIMode -int "2"
+
+# Trackpad settings
+defaults write com.apple.AppleMultitouchTrackpad "TrackpadThreeFingerDrag" -bool "true"
 
 # git config
 git config --global user.name \"Chung Wei\"
