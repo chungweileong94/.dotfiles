@@ -26,3 +26,7 @@ export ELECTRON_RUN_AS_NODE=1
 eval "$(fnm env --use-on-cd)"
 # fnm end
 
+# device-specific config
+if [ -f ~/.zsh/extra ]; then
+  source ~/.zsh/extra
+fi
