@@ -15,7 +15,7 @@
     "file_icons": true,
     "git_status": true
   },
-  "ui_font_family": ".SystemUIFont",
+  "ui_font_family": "Geist",
   "buffer_font_family": "Geist Mono",
   "buffer_font_features": {
     "liga": false,
