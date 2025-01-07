@@ -10,3 +10,9 @@ ln -s ~/.dotfiles/.config/zed/keymap.json ~/.config/zed/keymap.json
 mkdir -p ~/.config/ghostty
 ln -s ~/.dotfiles/.config/ghostty/config ~/.config/ghostty/config
 ln -s ~/.dotfiles/.config/ghostty/themes ~/.config/ghostty/themes
+
+# brew
+brew bundle --file Brewfile
+
+# zed + electron
+xattr -d com.apple.quarantine /Applications/Electron.app/
