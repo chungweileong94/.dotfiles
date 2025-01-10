@@ -23,7 +23,8 @@
     "ruff": true,
     "biome": true,
     "emmet": true,
-    "rainbow-csv": true
+    "rainbow-csv": true,
+    "cspell": true
   },
   "file_types": {
     "Shell Script": [".env.local", ".env.development"],
