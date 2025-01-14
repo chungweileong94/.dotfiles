@@ -6,6 +6,11 @@
     },
     "version": "2"
   },
+  "theme": {
+    "dark": "Vercel Dark",
+    "light": "Vercel Light",
+    "mode": "system"
+  },
   "tabs": {
     "file_icons": true,
     "git_status": true
@@ -20,6 +25,7 @@
     "inline_completion_provider": "none"
   },
   "auto_install_extensions": {
+    "vercel-theme": true,
     "ruff": true,
     "biome": true,
     "emmet": true,
