@@ -1,0 +1,8 @@
+[
+  {
+    "label": "Open in Ghostty",
+    "command": "open -a Ghostty .",
+    "reveal": "never",
+    "hide": "always"
+  }
+]
