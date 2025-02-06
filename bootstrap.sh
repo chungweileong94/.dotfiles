@@ -28,5 +28,3 @@ ln -s ~/.dotfiles/.config/ghostty/themes ~/.config/ghostty
 # brew
 brew bundle --file ~/.dotfiles/Brewfile
 
-# zed + electron
-xattr -d com.apple.quarantine /Applications/Electron.app/

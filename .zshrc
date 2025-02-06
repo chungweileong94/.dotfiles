@@ -18,10 +18,6 @@ alias git-profile-personal="git config user.name \"Chung Wei\" && git config use
 alias git-profile-work="git config user.name \"Chung Wei\" && git config user.email chungwei@whiteroom.work"
 # aliases end
 
-# zed
-export ELECTRON_RUN_AS_NODE=1
-# zed end
-
 # fnm
 eval "$(fnm env --use-on-cd)"
 # fnm end
