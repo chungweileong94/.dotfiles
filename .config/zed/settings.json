@@ -1,11 +1,4 @@
 {
-  "assistant": {
-    "default_model": {
-      "provider": "zed.dev",
-      "model": "claude-3-5-sonnet-latest"
-    },
-    "version": "2"
-  },
   "theme": {
     "dark": "Vercel Dark",
     "light": "Vercel Light",
@@ -21,8 +14,15 @@
     "liga": false,
     "calt": false
   },
+  "assistant": {
+    "default_model": {
+      "provider": "zed.dev",
+      "model": "claude-3-5-sonnet-latest"
+    },
+    "version": "2"
+  },
   "features": {
-    "inline_completion_provider": "none"
+    "inline_completion_provider": "zed"
   },
   "auto_install_extensions": {
     "vercel-theme": true,
