@@ -1,3 +1,7 @@
+# Install Homebrew
+if ! command -v brew &>/dev/null; then
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+fi
 
 # Keyboard settings
 defaults write -g InitialKeyRepeat -int 15
