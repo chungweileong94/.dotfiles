@@ -12,7 +12,7 @@ defaults write NSGlobalDomain AppleKeyboardUIMode -int "2"
 defaults write com.apple.AppleMultitouchTrackpad "TrackpadThreeFingerDrag" -bool "true"
 
 # git config
-git config --global user.name \"Chung Wei\"
+git config --global user.name "Chung Wei"
 git config --global user.email leongchungwei@hotmail.com
 
 # .zshrc
@@ -31,4 +31,3 @@ ln -s ~/.dotfiles/.config/ghostty/themes ~/.config/ghostty
 
 # brew
 brew bundle --file ~/.dotfiles/Brewfile
-
