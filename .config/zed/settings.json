@@ -32,7 +32,7 @@
     "biome": true,
     "emmet": true,
     "rainbow-csv": true,
-    "cspell": true
+    "codebook": true
   },
   "file_types": {
     "Shell Script": [".env.local", ".env.development"],
