@@ -9,9 +9,9 @@
     "git_status": true
   },
   "ui_font_family": "Geist Mono",
-  "ui_font_size": 15,
+  "ui_font_weight": 500,
   "buffer_font_family": "Geist Mono",
-  "buffer_font_size": 15,
+  "buffer_font_weight": 500,
   "buffer_font_features": {
     "liga": false,
     "calt": false
