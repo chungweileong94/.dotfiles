@@ -4,5 +4,11 @@
     "command": "open -a Ghostty .",
     "reveal": "never",
     "hide": "always"
+  },
+  {
+    "label": "Open Lazygit",
+    "command": "lazygit",
+    "reveal_target": "center",
+    "hide": "on_success"
   }
 ]
