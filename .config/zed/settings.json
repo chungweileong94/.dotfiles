@@ -27,6 +27,9 @@
   "features": {
     "edit_prediction_provider": "zed"
   },
+  "edit_predictions": {
+    "mode": "subtle"
+  },
   "auto_install_extensions": {
     "vercel-theme": true,
     "catppuccin-icons": true,
