@@ -1,8 +1,4 @@
 {
-  "icon_theme": {
-    "dark": "Catppuccin Frappé",
-    "light": "Catppuccin Latte"
-  },
   "theme": {
     "dark": "Vercel Dark",
     "light": "Vercel Light"
@@ -32,7 +28,6 @@
   },
   "auto_install_extensions": {
     "vercel-theme": true,
-    "catppuccin-icons": true,
     "ruff": true,
     "biome": true,
     "emmet": true,
