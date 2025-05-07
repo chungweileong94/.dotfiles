@@ -17,7 +17,7 @@
     "liga": false,
     "calt": false
   },
-  "assistant": {
+  "agent": {
     "default_model": {
       "provider": "zed.dev",
       "model": "claude-3-7-sonnet-latest"
