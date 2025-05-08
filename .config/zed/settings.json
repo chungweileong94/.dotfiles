@@ -13,6 +13,9 @@
     "liga": false,
     "calt": false
   },
+  "terminal": {
+    "line_height": "standard"
+  },
   "agent": {
     "default_model": {
       "provider": "zed.dev",
