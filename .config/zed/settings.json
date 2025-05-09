@@ -1,8 +1,4 @@
 {
-  "theme": {
-    "dark": "Vercel Dark",
-    "light": "Vercel Light"
-  },
   "tabs": {
     "file_icons": true,
     "git_status": true
@@ -30,7 +26,6 @@
     "mode": "subtle"
   },
   "auto_install_extensions": {
-    "vercel-theme": true,
     "ruff": true,
     "biome": true,
     "emmet": true,
