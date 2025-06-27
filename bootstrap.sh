@@ -5,7 +5,7 @@ fi
 
 # Keyboard settings
 defaults write -g InitialKeyRepeat -int 15
-defaults write -g KeyRepeat -int 2
+defaults write -g KeyRepeat -int 1
 defaults write NSGlobalDomain AppleKeyboardUIMode -int "2"
 
 # Trackpad settings
