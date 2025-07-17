@@ -7,7 +7,6 @@
     "file_icons": true,
     "git_status": true
   },
-  "ui_font_family": "Zed Plex Mono",
   "buffer_font_features": {
     "liga": false,
     "calt": false
