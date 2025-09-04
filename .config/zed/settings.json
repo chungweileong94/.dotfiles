@@ -1,4 +1,5 @@
 {
+  "use_system_window_tabs": true,
   "theme": {
     "dark": "Vercel Dark",
     "light": "Vercel Light"
