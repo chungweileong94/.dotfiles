@@ -8,6 +8,7 @@
     "file_icons": true,
     "git_status": true
   },
+  "ui_font_family": ".ZedMono",
   "buffer_font_features": {
     "liga": false,
     "calt": false
