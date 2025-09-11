@@ -1,7 +1,6 @@
 [
   {
     "bindings": {
-      "ctrl-`": "workspace::ToggleBottomDock",
       "ctrl-shift-t l": ["task::Spawn", { "task_name": "Open Lazygit" }],
       "ctrl-shift-t g": ["task::Spawn", { "task_name": "Open in Ghostty" }]
     }
