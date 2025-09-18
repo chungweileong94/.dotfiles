@@ -18,7 +18,6 @@
   },
   "auto_install_extensions": {
     "vercel-theme": true,
-    "ruff": true,
     "biome": true,
     "emmet": true,
     "rainbow-csv": true,
