@@ -1,7 +1,8 @@
 [
   {
     "label": "Open in Terminal",
-    "command": "open -a Terminal .",
+    "command": "open",
+    "args": ["-a", "Terminal", "$ZED_WORKTREE_ROOT"],
     "reveal": "never",
     "hide": "always"
   },
