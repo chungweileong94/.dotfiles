@@ -7,6 +7,12 @@
     "hide": "always"
   },
   {
+    "label": "Open in Ghostty",
+    "command": "open -a Ghostty .",
+    "reveal": "never",
+    "hide": "always"
+  },
+  {
     "label": "Open Lazygit",
     "command": "lazygit",
     "reveal_target": "center",

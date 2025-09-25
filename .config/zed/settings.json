@@ -1,9 +1,5 @@
 {
   "use_system_window_tabs": true,
-  "theme": {
-    "dark": "Vercel Dark",
-    "light": "Vercel Light"
-  },
   "tabs": {
     "file_icons": true,
     "git_status": true
@@ -17,7 +13,6 @@
     "line_height": "standard"
   },
   "auto_install_extensions": {
-    "vercel-theme": true,
     "biome": true,
     "emmet": true,
     "rainbow-csv": true,
