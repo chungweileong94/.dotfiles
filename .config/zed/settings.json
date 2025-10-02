@@ -2,15 +2,13 @@
   "use_system_window_tabs": true,
   "tabs": {
     "file_icons": true,
-    "git_status": true
+    "git_status": true,
+    "show_diagnostics": "all"
   },
   "ui_font_family": ".ZedMono",
   "buffer_font_features": {
     "liga": false,
     "calt": false
-  },
-  "terminal": {
-    "line_height": "standard"
   },
   "auto_install_extensions": {
     "biome": true,
