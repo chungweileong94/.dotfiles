@@ -1,4 +1,5 @@
+auto-update-channel = tip
 shell-integration-features = no-cursor
-# theme = dark:"vercel-dark",light:"vercel-light"
+theme = Vercel
 font-size = 15
 font-feature = -liga
