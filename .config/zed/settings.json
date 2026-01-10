@@ -1,30 +1,36 @@
 {
-  "use_system_window_tabs": true,
   "tabs": {
     "file_icons": true,
     "git_status": true,
-    "show_diagnostics": "all"
+    "show_diagnostics": "all",
   },
   "ui_font_family": ".ZedMono",
   "buffer_font_features": {
     "liga": false,
-    "calt": false
+    "calt": false,
+  },
+  "git_panel": {
+    "tree_view": true,
+  },
+  "file_types": {
+    "JSON": ["site.webmanifest"],
   },
   "auto_install_extensions": {
     "biome": true,
+    "tsgo": true,
+    "oxc": true,
     "emmet": true,
     "rainbow-csv": true,
-    "codebook": true
+    "codebook": true,
   },
-  "file_types": {
-    "Shell Script": [".env.local", ".env.development"],
-    "JSON": ["site.webmanifest"]
-  },
-  "lsp": {
-    "biome": {
-      "settings": {
-        "require_config_file": true
-      }
-    }
-  }
+  "language_servers": [
+    "tsgo",
+    "!vtsls",
+    "!typescript-language-server",
+    "!biome",
+    "!oxlint",
+    "!oxfmt",
+    "!eslint",
+    "...",
+  ],
 }
