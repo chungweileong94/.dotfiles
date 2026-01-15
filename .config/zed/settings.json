@@ -2,18 +2,18 @@
   "tabs": {
     "file_icons": true,
     "git_status": true,
-    "show_diagnostics": "all",
+    "show_diagnostics": "all"
   },
   "ui_font_family": ".ZedMono",
   "buffer_font_features": {
     "liga": false,
-    "calt": false,
+    "calt": false
   },
   "git_panel": {
-    "tree_view": true,
+    "tree_view": true
   },
   "file_types": {
-    "JSON": ["site.webmanifest"],
+    "JSON": ["site.webmanifest"]
   },
   "auto_install_extensions": {
     "biome": true,
@@ -21,16 +21,47 @@
     "oxc": true,
     "emmet": true,
     "rainbow-csv": true,
-    "codebook": true,
+    "codebook": true
   },
-  "language_servers": [
-    "tsgo",
-    "!vtsls",
-    "!typescript-language-server",
-    "!biome",
-    "!oxlint",
-    "!oxfmt",
-    "!eslint",
-    "...",
-  ],
+  "languages": {
+    "TypeScript": {
+      "language_servers": [
+        "tsgo",
+        "!vtsls",
+        "!typescript-language-server",
+        "biome",
+        "oxlint",
+        "oxfmt",
+        "!eslint",
+        "..."
+      ]
+    },
+    "JavaScript": {
+      "language_servers": [
+        "tsgo",
+        "!vtsls",
+        "!typescript-language-server",
+        "biome",
+        "oxlint",
+        "oxfmt",
+        "!eslint",
+        "..."
+      ]
+    },
+    "TSX": {
+      "language_servers": [
+        "tsgo",
+        "!vtsls",
+        "!typescript-language-server",
+        "biome",
+        "oxlint",
+        "oxfmt",
+        "!eslint",
+        "..."
+      ]
+    },
+    "CSS": {
+      "language_servers": ["tailwindcss-intellisense-css", "!vscode-css-language-server"]
+    }
+  }
 }
