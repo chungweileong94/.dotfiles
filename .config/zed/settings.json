@@ -13,7 +13,8 @@
     "tree_view": true
   },
   "file_types": {
-    "JSON": ["site.webmanifest"]
+    "JSON": ["site.webmanifest"],
+    "JSONC": [".oxlintrc.json"]
   },
   "auto_install_extensions": {
     "biome": true,
