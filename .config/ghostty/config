@@ -1,5 +1,6 @@
 auto-update-channel = tip
-shell-integration-features = no-cursor
+auto-update = download
+shell-integration-features = no-cursor,ssh-terminfo,ssh-env
 theme = Vercel
 font-size = 15
 font-feature = -liga
