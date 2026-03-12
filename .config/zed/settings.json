@@ -24,43 +24,15 @@
     "rainbow-csv": true,
     "codebook": true
   },
+  "language_servers": [
+    "!tsgo",
+    "vtsls",
+    "!typescript-language-server",
+    "!biome",
+    "!eslint",
+    "...",
+  ],
   "languages": {
-    "TypeScript": {
-      "language_servers": [
-        "tsgo",
-        "!vtsls",
-        "!typescript-language-server",
-        "biome",
-        "oxlint",
-        "oxfmt",
-        "!eslint",
-        "..."
-      ]
-    },
-    "JavaScript": {
-      "language_servers": [
-        "tsgo",
-        "!vtsls",
-        "!typescript-language-server",
-        "biome",
-        "oxlint",
-        "oxfmt",
-        "!eslint",
-        "..."
-      ]
-    },
-    "TSX": {
-      "language_servers": [
-        "tsgo",
-        "!vtsls",
-        "!typescript-language-server",
-        "biome",
-        "oxlint",
-        "oxfmt",
-        "!eslint",
-        "..."
-      ]
-    },
     "CSS": {
       "language_servers": ["tailwindcss-intellisense-css", "!vscode-css-language-server"]
     },
