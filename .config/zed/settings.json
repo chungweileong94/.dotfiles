@@ -5,7 +5,6 @@
     "git_status": true,
     "show_diagnostics": "all"
   },
-  "ui_font_family": ".ZedMono",
   "buffer_font_features": {
     "liga": false,
     "calt": false
@@ -26,22 +25,27 @@
     "codebook": true
   },
   "language_servers": [
-    "!tsgo",
-    "vtsls",
+    "tsgo",
+    "!vtsls",
     "!typescript-language-server",
+    "oxlint",
+    "oxfmt",
     "!biome",
     "!eslint",
-    "...",
+    "..."
   ],
   "languages": {
     "CSS": {
-      "language_servers": ["tailwindcss-intellisense-css", "!vscode-css-language-server"]
-    },
+      "language_servers": [
+        "tailwindcss-intellisense-css",
+        "!vscode-css-language-server"
+      ]
+    }
   },
   "lsp": {
     "biome": {
       "settings": {
-         "require_config_file": true
+        "require_config_file": true
       }
     }
   }
