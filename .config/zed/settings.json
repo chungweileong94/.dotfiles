@@ -1,5 +1,4 @@
 {
-  "show_edit_predictions": false,
   "tabs": {
     "file_icons": true,
     "git_status": true,
@@ -9,18 +8,7 @@
     "liga": false,
     "calt": false
   },
-  "outline_panel": {
-    "dock": "left"
-  },
-  "project_panel": {
-    "dock": "left"
-  },
-  "agent": {
-    "sidebar_side": "right",
-    "dock": "right"
-  },
   "git_panel": {
-    "dock": "left",
     "tree_view": true
   },
   "edit_predictions": {
