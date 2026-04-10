@@ -9,7 +9,14 @@
     "calt": false
   },
   "git_panel": {
+    "dock": "left",
     "tree_view": true
+  },
+  "outline_panel": {
+    "dock": "left"
+  },
+  "project_panel": {
+    "dock": "left"
   },
   "edit_predictions": {
     "mode": "subtle"
