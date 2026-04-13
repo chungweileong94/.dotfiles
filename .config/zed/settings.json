@@ -18,6 +18,10 @@
   "project_panel": {
     "dock": "left"
   },
+  "agent": {
+    "sidebar_side": "right",
+    "dock": "right"
+  },
   "edit_predictions": {
     "mode": "subtle"
   },
