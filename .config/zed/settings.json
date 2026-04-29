@@ -8,20 +8,6 @@
     "liga": false,
     "calt": false
   },
-  "git_panel": {
-    "dock": "left",
-    "tree_view": true
-  },
-  "outline_panel": {
-    "dock": "left"
-  },
-  "project_panel": {
-    "dock": "left"
-  },
-  "agent": {
-    "sidebar_side": "right",
-    "dock": "right"
-  },
   "edit_predictions": {
     "mode": "subtle"
   },
@@ -30,7 +16,6 @@
     "JSONC": [".oxlintrc.json"]
   },
   "auto_install_extensions": {
-    "biome": true,
     "tsgo": true,
     "oxc": true,
     "emmet": true,
@@ -53,13 +38,6 @@
         "tailwindcss-intellisense-css",
         "!vscode-css-language-server"
       ]
-    }
-  },
-  "lsp": {
-    "biome": {
-      "settings": {
-        "require_config_file": true
-      }
     }
   }
 }
