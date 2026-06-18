@@ -1,6 +1,4 @@
 tap "oven-sh/bun", trusted: true
-# Official Amazon AWS command-line interface
-brew "awscli"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # Dependency manager for Cocoa projects
