@@ -28,4 +28,4 @@ cask "google-chrome"
 # Native database client for many database types
 cask "tablepro"
 # Multiplayer code editor
-cask "zed"
+cask "zed@preview"
