@@ -13,8 +13,6 @@ brew "mole"
 brew "xcodes"
 # Incredibly fast JavaScript runtime, bundler, transpiler and package manager - all in one.
 brew "oven-sh/bun/bun"
-# OpenAI's coding agent that runs in your terminal
-cask "codex"
 # OpenAI's Codex desktop app for managing coding agents
 cask "codex-app"
 # Terminal emulator that uses platform-native UI and GPU acceleration
