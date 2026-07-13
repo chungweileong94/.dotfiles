@@ -14,7 +14,7 @@ brew "xcodes"
 # Incredibly fast JavaScript runtime, bundler, transpiler and package manager - all in one.
 brew "oven-sh/bun/bun"
 # OpenAI's Codex desktop app for managing coding agents
-cask "codex-app"
+cask "chatgpt"
 # Terminal emulator that uses platform-native UI and GPU acceleration
 cask "ghostty"
 # Cross-platform Git credential storage for multiple hosting providers
