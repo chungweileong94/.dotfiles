@@ -1,25 +1,25 @@
 {
   "tabs": {
     "git_status": true,
-    "show_diagnostics": "all"
+    "show_diagnostics": "all",
   },
   "buffer_font_features": {
     "liga": false,
-    "calt": false
+    "calt": false,
   },
   "edit_predictions": {
-    "mode": "subtle"
+    "mode": "subtle",
   },
   "file_types": {
     "JSON": ["site.webmanifest"],
-    "JSONC": [".oxlintrc.json"]
+    "JSONC": [".oxlintrc.json"],
   },
   "auto_install_extensions": {
     "tsgo": true,
     "oxc": true,
     "emmet": true,
     "rainbow-csv": true,
-    "codebook": true
+    "codebook": true,
   },
   "language_servers": [
     "typescript-ls",
@@ -29,14 +29,14 @@
     "oxfmt",
     "!biome",
     "!eslint",
-    "..."
+    "...",
   ],
   "languages": {
     "CSS": {
       "language_servers": [
         "tailwindcss-intellisense-css",
-        "!vscode-css-language-server"
-      ]
-    }
-  }
+        "!vscode-css-language-server",
+      ],
+    },
+  },
 }
