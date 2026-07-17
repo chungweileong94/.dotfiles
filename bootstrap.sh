@@ -29,5 +29,11 @@ mkdir -p ~/.config/ghostty
 ln -s ~/.dotfiles/.config/ghostty/config ~/.config/ghostty/config
 ln -s ~/.dotfiles/.config/ghostty/themes ~/.config/ghostty
 
+# Codex pets
+mkdir -p ~/.codex
+if [ ! -e ~/.codex/pets ] && [ ! -L ~/.codex/pets ]; then
+  ln -s ~/.dotfiles/.codex/pets ~/.codex/pets
+fi
+
 # brew
 brew bundle --file ~/.dotfiles/Brewfile
