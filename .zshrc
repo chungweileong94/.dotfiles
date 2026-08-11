@@ -18,6 +18,11 @@ alias git-profile-personal="git config user.name \"Chung Wei\" && git config use
 alias git-profile-work="git config user.name \"Chung Wei\" && git config user.email chungwei@whiteroom.work"
 # aliases end
 
+# homebrew
+# Disable auto updates for casks, it causes too much issues
+export HOMEBREW_NO_UPGRADE_AUTO_UPDATES_CASKS=1
+# homebrew end
+
 # device-specific config
 if [ -f ~/.zsh/extra ]; then
   source ~/.zsh/extra
