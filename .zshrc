@@ -6,7 +6,7 @@ source ${ZDOTDIR:-${HOME}}/.antigen/bin/antigen.zsh
 antigen use oh-my-zsh
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-syntax-highlighting
-antigen theme chungweileong94/zsh-theme@custom
+antigen theme chungweileong94/zsh-theme
 antigen apply
 # antigen end
 
