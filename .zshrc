@@ -23,6 +23,10 @@ alias git-profile-work="git config user.name \"Chung Wei\" && git config user.em
 export HOMEBREW_NO_UPGRADE_AUTO_UPDATES_CASKS=1
 # homebrew end
 
+# vite-plus
+. "$HOME/.vite-plus/env"
+# vite-plus env
+
 # device-specific config
 if [ -f ~/.zsh/extra ]; then
   source ~/.zsh/extra

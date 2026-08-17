@@ -18,6 +18,9 @@ git config --global user.email leongchungwei@hotmail.com
 # .zshrc
 ln -s ~/.dotfiles/.zshrc ~/.zshrc
 
+# .zshenv
+ln -s ~/.dotfiles/.zshenv ~/.zshenv
+
 # zed config
 mkdir -p ~/.config/zed
 ln -s ~/.dotfiles/.config/zed/settings.json ~/.config/zed/settings.json
