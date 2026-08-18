@@ -17,8 +17,6 @@ brew "oven-sh/bun/bun"
 cask "chatgpt"
 # Terminal emulator that uses platform-native UI and GPU acceleration
 cask "ghostty"
-# Cross-platform Git credential storage for multiple hosting providers
-cask "git-credential-manager"
 # Web browser
 cask "google-chrome"
 # Native database client for many database types
