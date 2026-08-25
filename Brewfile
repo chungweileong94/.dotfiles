@@ -1,4 +1,3 @@
-tap "markmals/tap"
 tap "oven-sh/bun", trusted: true
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
@@ -14,8 +13,6 @@ brew "libpq", link: true
 brew "mole"
 # Command-line tool to install and switch between multiple versions of Xcode
 brew "xcodes"
-# Unified Toolchain for the Web
-brew "markmals/tap/vite-plus", trusted: true
 # Incredibly fast JavaScript runtime, bundler, transpiler and package manager - all in one.
 brew "oven-sh/bun/bun"
 # Display management tool

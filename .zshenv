@@ -1,3 +1,3 @@
 # vite-plus
-. "$HOME/.vite-plus/env"
+. "$HOME/.config/vite-plus/env"
 # vite-plus env

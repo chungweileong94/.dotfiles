@@ -11,7 +11,7 @@ defaults write NSGlobalDomain AppleKeyboardUIMode -int "2"
 # Trackpad settings
 defaults write com.apple.AppleMultitouchTrackpad "TrackpadThreeFingerDrag" -bool "true"
 
-# git config
+# Git config
 git config --global user.name "Chung Wei"
 git config --global user.email leongchungwei@hotmail.com
 
@@ -21,13 +21,13 @@ ln -s ~/.dotfiles/.zshrc ~/.zshrc
 # .zshenv
 ln -s ~/.dotfiles/.zshenv ~/.zshenv
 
-# zed config
+# Zed config
 mkdir -p ~/.config/zed
 ln -s ~/.dotfiles/.config/zed/settings.json ~/.config/zed/settings.json
 ln -s ~/.dotfiles/.config/zed/keymap.json ~/.config/zed/keymap.json
 ln -s ~/.dotfiles/.config/zed/tasks.json ~/.config/zed/tasks.json
 
-# ghostty config
+# Ghostty config
 mkdir -p ~/.config/ghostty
 ln -s ~/.dotfiles/.config/ghostty/config ~/.config/ghostty/config
 ln -s ~/.dotfiles/.config/ghostty/themes ~/.config/ghostty
@@ -38,5 +38,10 @@ if [ ! -e ~/.codex/pets ] && [ ! -L ~/.codex/pets ]; then
   ln -s ~/.dotfiles/.codex/pets ~/.codex/pets
 fi
 
-# brew
+# Brew
 brew bundle --file ~/.dotfiles/Brewfile
+
+# Install Vite Plus
+if ! command -v vp &>/dev/null; then
+  curl -fsSL https://vite.plus | bash
+fi

@@ -24,7 +24,7 @@ export HOMEBREW_NO_UPGRADE_AUTO_UPDATES_CASKS=1
 # homebrew end
 
 # vite-plus
-. "$HOME/.vite-plus/env"
+. "$HOME/.config/vite-plus/env"
 # vite-plus env
 
 # device-specific config
