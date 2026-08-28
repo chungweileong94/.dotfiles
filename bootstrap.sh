@@ -17,6 +17,7 @@ git config --global user.email leongchungwei@hotmail.com
 
 # .zshrc
 ln -s ~/.dotfiles/.zshrc ~/.zshrc
+source ~/.zshrc
 
 # .zshenv
 ln -s ~/.dotfiles/.zshenv ~/.zshenv
@@ -40,6 +41,7 @@ fi
 
 # Brew
 brew bundle --file ~/.dotfiles/Brewfile
+brew-upgrade
 
 # Install Vite Plus
 if ! command -v vp &>/dev/null; then
