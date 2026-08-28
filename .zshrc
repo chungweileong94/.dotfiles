@@ -23,6 +23,39 @@ alias git-profile-work="git config user.name \"Chung Wei\" && git config user.em
 export HOMEBREW_NO_UPGRADE_AUTO_UPDATES_CASKS=1
 # homebrew end
 
+# Hombrew upgrade helper, which also remove quarantine attr from codex and claude-code
+brew-upgrade() {
+  echo "==> Upgrading Homebrew packages..."
+  brew upgrade || return
+
+  echo "==> Removing unused dependencies..."
+  brew autoremove || return
+
+  echo "==> Cleaning up old versions..."
+  brew cleanup || return
+
+  echo "==> Requesting sudo access for quarantine removal..."
+  sudo -v || return
+
+  echo "==> Removing quarantine attributes..."
+
+  for cask in \
+    codex \
+    claude-code@latest
+  do
+    local cask_path="$(brew --prefix)/Caskroom/$cask"
+
+    if [[ -d "$cask_path" ]]; then
+      echo "    - $cask"
+      sudo xattr -dr com.apple.quarantine "$cask_path"
+    else
+      echo "    - $cask not installed, skipping"
+    fi
+  done
+
+  echo "==> Done."
+}
+
 # vite-plus
 . "$HOME/.config/vite-plus/env"
 # vite-plus env
