@@ -14,9 +14,29 @@ antigen apply
 alias cat="bat --paging=never"
 alias git-fetch="git fetch --all --prune"
 alias git-delete-merged="git branch --merged | egrep -v \"(^\*|master|main|staging|dev|development)\" | xargs git branch -d"
-alias git-profile-personal="git config user.name \"Chung Wei\" && git config user.email leongchungwei@hotmail.com"
-alias git-profile-work="git config user.name \"Chung Wei\" && git config user.email chungwei@whiteroom.work"
 # aliases end
+
+# git profiles (personal/work name+email, read from a gitignored file
+# created by bootstrap.sh so identities never get committed)
+git-profile-personal() {
+  if [ ! -f ~/.dotfiles/.git-profiles.env ]; then
+    echo "no ~/.dotfiles/.git-profiles.env found, run bootstrap.sh first" >&2
+    return 1
+  fi
+  source ~/.dotfiles/.git-profiles.env
+  git config user.name "$GIT_PERSONAL_NAME"
+  git config user.email "$GIT_PERSONAL_EMAIL"
+}
+
+git-profile-work() {
+  if [ ! -f ~/.dotfiles/.git-profiles.env ]; then
+    echo "no ~/.dotfiles/.git-profiles.env found, run bootstrap.sh first" >&2
+    return 1
+  fi
+  source ~/.dotfiles/.git-profiles.env
+  git config user.name "$GIT_WORK_NAME"
+  git config user.email "$GIT_WORK_EMAIL"
+}
 
 # homebrew
 # Disable auto updates for casks, it causes too much issues
