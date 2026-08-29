@@ -16,28 +16,31 @@ git config --global user.name "Chung Wei"
 git config --global user.email leongchungwei@hotmail.com
 
 # .zshrc
-ln -s ~/.dotfiles/.zshrc ~/.zshrc
+ln -sfn ~/.dotfiles/.zshrc ~/.zshrc
 source ~/.zshrc
 
 # .zshenv
-ln -s ~/.dotfiles/.zshenv ~/.zshenv
+ln -sfn ~/.dotfiles/.zshenv ~/.zshenv
 
 # Zed config
 mkdir -p ~/.config/zed
-ln -s ~/.dotfiles/.config/zed/settings.json ~/.config/zed/settings.json
-ln -s ~/.dotfiles/.config/zed/keymap.json ~/.config/zed/keymap.json
-ln -s ~/.dotfiles/.config/zed/tasks.json ~/.config/zed/tasks.json
+ln -sfn ~/.dotfiles/.config/zed/settings.json ~/.config/zed/settings.json
+ln -sfn ~/.dotfiles/.config/zed/keymap.json ~/.config/zed/keymap.json
+ln -sfn ~/.dotfiles/.config/zed/tasks.json ~/.config/zed/tasks.json
 
 # Ghostty config
 mkdir -p ~/.config/ghostty
-ln -s ~/.dotfiles/.config/ghostty/config ~/.config/ghostty/config
-ln -s ~/.dotfiles/.config/ghostty/themes ~/.config/ghostty
+ln -sfn ~/.dotfiles/.config/ghostty/config ~/.config/ghostty/config
+ln -sfn ~/.dotfiles/.config/ghostty/themes ~/.config/ghostty/themes
 
-# Codex pets
+# Codex config
 mkdir -p ~/.codex
-if [ ! -e ~/.codex/pets ] && [ ! -L ~/.codex/pets ]; then
-  ln -s ~/.dotfiles/.codex/pets ~/.codex/pets
-fi
+ln -sfn ~/.dotfiles/.codex/pets ~/.codex/pets
+
+# Claude Code config
+mkdir -p ~/.claude
+ln -sfn ~/.dotfiles/.claude/settings.json ~/.claude/settings.json
+ln -sfn ~/.dotfiles/.claude/statusline-command.sh ~/.claude/statusline-command.sh
 
 # Brew
 brew bundle --file ~/.dotfiles/Brewfile
