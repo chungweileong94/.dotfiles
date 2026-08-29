@@ -21,7 +21,9 @@ link() {
 }
 
 install_homebrew() {
-  if ! command -v brew &>/dev/null; then
+  if command -v brew &>/dev/null; then
+    echo "\033[34minfo: Homebrew is already installed, skipping\033[0m"
+  else
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
   fi
 }
@@ -102,7 +104,9 @@ install_brew_packages() {
 }
 
 install_vite_plus() {
-  if ! command -v vp &>/dev/null; then
+  if command -v vp &>/dev/null; then
+    echo "\033[34minfo: Vite Plus is already installed, skipping\033[0m"
+  else
     curl -fsSL https://vite.plus | bash
   fi
 }
