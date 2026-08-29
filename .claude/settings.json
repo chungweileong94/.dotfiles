@@ -13,5 +13,6 @@
     "type": "command",
     "command": "sh ~/.claude/statusline-command.sh"
   },
+  "autoMemoryEnabled": false,
   "remoteControlAtStartup": true
 }
