@@ -27,12 +27,12 @@ cask "codex"
 cask "ghostty"
 # Web browser
 cask "google-chrome"
-# AI usage tracker for Cursor, Claude Code, Codex, Copilot and more
-cask "openusage"
 # Replacement for Docker Desktop
 cask "orbstack"
 # Team communication and collaboration software
 cask "slack"
+# Minimal GUI for AI code agents
+cask "t3-code@nightly"
 # Native database client for many database types
 cask "tablepro"
 # Mesh VPN based on WireGuard
