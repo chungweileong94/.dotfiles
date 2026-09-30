@@ -90,7 +90,7 @@ link_ghostty_config() {
 }
 
 link_codex_config() {
-  link ~/.dotfiles/.codex/pets ~/.codex/pets
+  # Codex config for future
 }
 
 link_claude_config() {
