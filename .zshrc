@@ -45,35 +45,63 @@ export HOMEBREW_NO_UPGRADE_AUTO_UPDATES_CASKS=1
 
 # Hombrew upgrade helper, which also remove quarantine attr from codex and claude-code
 brew-upgrade() {
-  echo "==> Upgrading Homebrew packages..."
-  brew upgrade || return
-
-  echo "==> Removing unused dependencies..."
-  brew autoremove || return
-
-  echo "==> Cleaning up old versions..."
-  brew cleanup || return
-
-  echo "==> Requesting sudo access for quarantine removal..."
+  echo "==> Requesting sudo access..."
   sudo -v || return
 
-  echo "==> Removing quarantine attributes..."
+  # Keep sudo credentials fresh while Homebrew runs.
+  (
+    local sudo_keepalive_child_pid
+    trap '
+      if [[ -n "$sudo_keepalive_child_pid" ]]; then
+        kill "$sudo_keepalive_child_pid" 2>/dev/null
+        wait "$sudo_keepalive_child_pid" 2>/dev/null
+      fi
+      exit 0
+    ' TERM INT HUP
 
-  for cask in \
-    codex \
-    claude-code@latest
-  do
-    local cask_path="$(brew --prefix)/Caskroom/$cask"
+    while true; do
+      sleep 60 &
+      sudo_keepalive_child_pid=$!
+      wait "$sudo_keepalive_child_pid" || break
 
-    if [[ -d "$cask_path" ]]; then
-      echo "    - $cask"
-      sudo xattr -dr com.apple.quarantine "$cask_path"
-    else
-      echo "    - $cask not installed, skipping"
-    fi
-  done
+      sudo -n -v &
+      sudo_keepalive_child_pid=$!
+      wait "$sudo_keepalive_child_pid" || break
+    done
+  ) &
+  local sudo_keepalive_pid=$!
 
-  echo "==> Done."
+  {
+    echo "==> Upgrading Homebrew packages..."
+    brew upgrade || return
+
+    echo "==> Removing unused dependencies..."
+    brew autoremove || return
+
+    echo "==> Cleaning up old versions..."
+    brew cleanup || return
+
+    echo "==> Removing quarantine attributes..."
+
+    for cask in \
+      codex \
+      claude-code@latest
+    do
+      local cask_path="$(brew --prefix)/Caskroom/$cask"
+
+      if [[ -d "$cask_path" ]]; then
+        echo "    - $cask"
+        sudo xattr -dr com.apple.quarantine "$cask_path"
+      else
+        echo "    - $cask not installed, skipping"
+      fi
+    done
+
+    echo "==> Done."
+  } always {
+    kill "$sudo_keepalive_pid" 2>/dev/null
+    wait "$sudo_keepalive_pid" 2>/dev/null
+  }
 }
 
 # vite-plus
