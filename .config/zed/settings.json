@@ -1,4 +1,61 @@
 {
+  "ssh_connections": [
+    {
+      "host": "work-mac-mini",
+      "args": [],
+      "projects": [
+        {
+          "paths": [
+            "/Users/chungwei/.dotfiles"
+          ]
+        },
+        {
+          "paths": [
+            "/Users/chungwei/Developer/agent-hub/./"
+          ]
+        }
+      ]
+    }
+  ],
+  "cli_default_open_behavior": "new_window",
+  "agent_servers": {
+    "codex-acp": {
+      "default_config_options": {
+        "mode": "full-access",
+      },
+      "type": "registry",
+    },
+  },
+  "project_panel": {
+    "dock": "left",
+  },
+  "outline_panel": {
+    "dock": "left",
+  },
+  "collaboration_panel": {
+    "dock": "left",
+  },
+  "agent": {
+    "inline_assistant_model": {
+      "provider": "openai-subscribed",
+      "model": "gpt-5.6-luna",
+      "enable_thinking": false
+    },
+    "default_model": {
+      "provider": "openai-subscribed",
+      "model": "gpt-5.6-luna",
+      "enable_thinking": true,
+      "effort": "medium",
+    },
+    "dock": "right",
+    "favorite_models": [],
+    "model_parameters": [],
+  },
+  "git_panel": {
+    "group_by": "none",
+    "tree_view": true,
+    "dock": "left",
+  },
   "tabs": {
     "git_status": true,
     "show_diagnostics": "all",

@@ -14,5 +14,56 @@
     "command": "sh ~/.claude/statusline-command.sh"
   },
   "autoMemoryEnabled": false,
-  "remoteControlAtStartup": true
+  "remoteControlAtStartup": true,
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash '/Users/chungwei/.claude/hooks/herdr-agent-state.sh' session",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  },
+  "worktree": {
+    "baseRef": "fresh"
+  },
+  "enabledPlugins": {
+    "cw-skills@chungwei": true,
+    "mattpocock-skills@mattpocock": true,
+    "vercel@claude-plugins-official": true,
+    "expo@expo-plugins": true,
+    "improve@improve": true,
+    "bkt@avivsinai-bitbucket-cli": true
+  },
+  "extraKnownMarketplaces": {
+    "chungwei": {
+      "source": {
+        "source": "github",
+        "repo": "chungweileong94/skills"
+      }
+    },
+    "mattpocock": {
+      "source": {
+        "source": "github",
+        "repo": "mattpocock/skills"
+      }
+    },
+    "claude-plugins-official": {
+      "source": {
+        "source": "github",
+        "repo": "anthropics/claude-plugins-official"
+      }
+    }
+  },
+  "effortLevel": "medium",
+  "editorMode": "normal",
+  "terminalProgressBarEnabled": true,
+  "inputNeededNotifEnabled": true,
+  "agentPushNotifEnabled": true,
+  "skipAutoPermissionPrompt": true
 }

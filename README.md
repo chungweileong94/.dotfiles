@@ -9,7 +9,19 @@ git clone https://github.com/chungweileong94/.dotfiles.git && source ~/.dotfiles
 ```
 
 ### Devices-specific zsh config
-Put the device-specific zsh config under `~/.zsh/extra`.
+Put the device-specific interactive zsh config under `~/.zsh/extra`.
+
+Put device-specific environment settings under `~/.zsh/extra-env`. `.zshenv`
+loads this file for every zsh session, including non-interactive shells.
+Both files live outside this repository, so Git does not track them.
+
+```bash
+mkdir -p ~/.zsh
+touch ~/.zsh/extra-env
+```
+
+Add settings such as `export MY_VARIABLE="value"` to `~/.zsh/extra-env`, then
+open a new shell to load them.
 
 ### Git profiles
 The first time `bootstrap.sh` runs, it prompts for a personal name+email, a work
