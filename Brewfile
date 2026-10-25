@@ -1,10 +1,13 @@
+tap "chungweileong94/tap"
 tap "oven-sh/bun", trusted: true
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # Like neofetch, but much faster because written mostly in C
 brew "fastfetch"
-# Agent multiplexer that lives in your terminal
-brew "herdr"
+# Play, record, convert, and stream select audio and video codecs
+brew "ffmpeg"
+# GitHub command-line tool
+brew "gh"
 # Simple terminal UI for git commands
 brew "lazygit"
 # Postgres C API library
@@ -23,12 +26,12 @@ cask "chatgpt"
 cask "claude-code@latest"
 # OpenAI's coding agent that runs in your terminal
 cask "codex"
-# Terminal emulator that uses platform-native UI and GPU acceleration
-cask "ghostty"
 # Web browser
 cask "google-chrome"
 # Replacement for Docker Desktop
 cask "orbstack"
+# Terminal emulator and multiplexer (preview)
+cask "chungweileong94/tap/rex", trusted: true
 # Team communication and collaboration software
 cask "slack"
 # Minimal GUI for AI code agents
