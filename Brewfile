@@ -35,7 +35,7 @@ cask "chungweileong94/tap/rex", trusted: true
 # Team communication and collaboration software
 cask "slack"
 # Minimal GUI for AI code agents
-cask "t3-code@nightly"
+cask "t3-code"
 # Native database client for many database types
 cask "tablepro"
 # Mesh VPN based on WireGuard
