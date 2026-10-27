@@ -41,4 +41,4 @@ cask "tablepro"
 # Mesh VPN based on WireGuard
 cask "tailscale-app"
 # Multiplayer code editor
-cask "zed@preview"
+cask "zed"
