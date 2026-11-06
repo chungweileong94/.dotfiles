@@ -103,14 +103,6 @@ install_brew_packages() {
   brew-upgrade
 }
 
-install_vite_plus() {
-  if command -v vp &>/dev/null; then
-    echo "\033[34minfo: Vite Plus is already installed, skipping\033[0m"
-  else
-    curl -fsSL https://vite.plus | bash
-  fi
-}
-
 section "Installing Homebrew" install_homebrew
 section "Linking .zshrc" link_zshrc
 section "Linking .zshenv" link_zshenv
@@ -122,4 +114,3 @@ section "Linking Ghostty config" link_ghostty_config
 section "Linking Codex config" link_codex_config
 section "Linking Claude Code config" link_claude_config
 section "Installing Brewfile packages" install_brew_packages
-section "Installing Vite Plus" install_vite_plus

@@ -1,5 +1,6 @@
 tap "chungweileong94/tap"
 tap "oven-sh/bun", trusted: true
+tap "voidzero-dev/vite-plus", "https://github.com/voidzero-dev/vite-plus"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # Like neofetch, but much faster because written mostly in C
@@ -18,6 +19,8 @@ brew "mole"
 brew "xcodes"
 # Incredibly fast JavaScript runtime, bundler, transpiler and package manager - all in one.
 brew "oven-sh/bun/bun"
+# Unified toolchain for the web
+brew "voidzero-dev/vite-plus/vp"
 # Display management tool
 cask "betterdisplay"
 # OpenAI's official ChatGPT desktop app
@@ -30,7 +33,7 @@ cask "codex"
 cask "google-chrome"
 # Replacement for Docker Desktop
 cask "orbstack"
-# Terminal emulator and multiplexer (preview)
+# Terminal emulator and multiplexer (snapshot)
 cask "chungweileong94/tap/rex", trusted: true
 # Team communication and collaboration software
 cask "slack"
