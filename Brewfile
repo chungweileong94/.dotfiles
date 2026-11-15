@@ -29,10 +29,10 @@ cask "chatgpt"
 cask "claude-code@latest"
 # OpenAI's coding agent that runs in your terminal
 cask "codex"
-# Web browser
-cask "google-chrome"
-# Replacement for Docker Desktop
-cask "orbstack"
+# Chromium-based web browser
+cask "helium-browser"
+# Lightweight container runtime compatible with Docker CLI and Compose
+cask "chungweileong94/tap/kiri", trusted: true
 # Terminal emulator and multiplexer (snapshot)
 cask "chungweileong94/tap/rex", trusted: true
 # Team communication and collaboration software
