@@ -1,5 +1,6 @@
 tap "ardia-browser/tap"
 tap "chungweileong94/tap"
+tap "libracoder/kiri"
 tap "oven-sh/bun", trusted: true
 tap "voidzero-dev/vite-plus", "https://github.com/voidzero-dev/vite-plus"
 # Clone of cat(1) with syntax highlighting and Git integration
@@ -32,8 +33,8 @@ cask "chatgpt"
 cask "claude-code@latest"
 # OpenAI's coding agent that runs in your terminal
 cask "codex"
-# Lightweight container runtime compatible with Docker CLI and Compose
-cask "chungweileong94/tap/kiri", trusted: true
+# Container runtime compatible with the Docker CLI, Compose and buildx
+cask "libracoder/kiri/kiri", trusted: true
 # Terminal emulator and multiplexer (snapshot)
 cask "chungweileong94/tap/rex", trusted: true
 # Team communication and collaboration software
