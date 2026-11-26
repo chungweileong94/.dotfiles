@@ -1,3 +1,4 @@
+tap "ardia-browser/tap"
 tap "chungweileong94/tap"
 tap "oven-sh/bun", trusted: true
 tap "voidzero-dev/vite-plus", "https://github.com/voidzero-dev/vite-plus"
@@ -21,6 +22,8 @@ brew "xcodes"
 brew "oven-sh/bun/bun"
 # Unified toolchain for the web
 brew "voidzero-dev/vite-plus/vp"
+# Web browser with Arc's sidebar and Dia's polish
+cask "ardia-browser/tap/ardia", trusted: true
 # Display management tool
 cask "betterdisplay"
 # OpenAI's official ChatGPT desktop app
@@ -29,8 +32,6 @@ cask "chatgpt"
 cask "claude-code@latest"
 # OpenAI's coding agent that runs in your terminal
 cask "codex"
-# Chromium-based web browser
-cask "helium-browser"
 # Lightweight container runtime compatible with Docker CLI and Compose
 cask "chungweileong94/tap/kiri", trusted: true
 # Terminal emulator and multiplexer (snapshot)
